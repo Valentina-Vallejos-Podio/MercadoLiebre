@@ -9,7 +9,7 @@ app.listen(process.env.PORT,()=>{
   console.log("servidor funcionando en el puerto" + process.env.PORT);
 });
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname,"/views/home.html"))
 });
 
